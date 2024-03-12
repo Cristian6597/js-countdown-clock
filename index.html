@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CountDownTimer</title>
+  </head>
+  <body>
+    <h1>CountDown Timer</h1>
+    <div id="container">
+      <p id="work" class="label">Work:</p>
+      <p id="break" class="label"></p>
+      <p id="cycles" class="label"></p>
+
+      <!--Work Timer-->
+      <div id="work-timer" class="timer">
+        <p id="w_minutes">24</p>
+        <p class="semicolon">:</p>
+        <p id="w_seconds">00</p>
+      </div>
+
+      <button id="start" class="btn">Start</button>
+      <button id="stop" class="btn">Pause</button>
+      <button id="reset" class="btn">Reset</button>
+
+      <!-- Seconds time buttons -->
+      <div id="s-timer-container">
+        <button id="s-btn-decrease" onclick="sDecreaseTimer()">-</button>
+        <div id="s-timer"></div>
+        <button id="s-btn-increase" onclick="sIncreaseTimer()">+</button>
+      </div>
+      <!-- Minutes time buttons -->
+      <div id="m-timer-container">
+        <button id="m-btn-decrease" onclick="mDecreaseTimer()">-</button>
+        <div id="m-timer"></div>
+        <button id="m-btn-increase" onclick="mIncreaseTimer()">+</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
